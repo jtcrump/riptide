@@ -1,0 +1,7 @@
+name = Tulane Course Content Type
+description = Tulane Course Content Type
+core = 7.x
+package = Tulane Content
+version = 7.x-1.0
+project = tulane_course_content_type
+features[features_api][] = api:2
