@@ -287,6 +287,63 @@ function tulane_event_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-event-field_location'
+  $field_instances['node-event-field_location'] = array(
+    'bundle' => 'event',
+    'default_value' => array(
+      0 => array(
+        'value' => 'Uptown Campus',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Please select a location.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 4,
+      ),
+      'full' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'homepage' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_location',
+    'label' => 'Location',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'node-event-field_organizations_ref'
   $field_instances['node-event-field_organizations_ref'] = array(
     'bundle' => 'event',
@@ -350,7 +407,9 @@ function tulane_event_content_type_field_default_field_instances() {
   t('Body');
   t('Date');
   t('Image');
+  t('Location');
   t('Organizations');
+  t('Please select a location.');
   t('The date entered will be used to determine how to display the Event on the Calendar.');
 
   return $field_instances;
