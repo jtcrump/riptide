@@ -79,6 +79,128 @@ function tulane_testimonial_content_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-testimonial-field_academic_year_ref'
+  $field_instances['node-testimonial-field_academic_year_ref'] = array(
+    'bundle' => 'testimonial',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Select academic year (if applicable)',
+    'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
+        ),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 7,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'thumbnail' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_academic_year_ref',
+    'label' => 'Academic Year',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 49,
+    ),
+  );
+
+  // Exported field_instance: 'node-testimonial-field_classification'
+  $field_instances['node-testimonial-field_classification'] = array(
+    'bundle' => 'testimonial',
+    'default_value' => array(
+      0 => array(
+        'value' => 'Student',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Please select the classification',
+    'display' => array(
+      'alternate' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 8,
+      ),
+      'featured' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'thumbnail' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_classification',
+    'label' => 'Classification',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 50,
+    ),
+  );
+
   // Exported field_instance: 'node-testimonial-field_first_name'
   $field_instances['node-testimonial-field_first_name'] = array(
     'bundle' => 'testimonial',
@@ -613,11 +735,15 @@ function tulane_testimonial_content_type_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Academic Year');
   t('Body');
+  t('Classification');
   t('First Name');
   t('Last Name');
+  t('Please select the classification');
   t('Position Title');
   t('Quote');
+  t('Select academic year (if applicable)');
   t('image');
   t('organizations');
 
