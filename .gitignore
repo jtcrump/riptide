@@ -1,5 +1,7 @@
 # Ignore configuration files that may contain sensitive information.
-docroot/sites/*/*settings*.php
+docroot/sites/*/settings*.php
+docroot/sites/riptide.dd
+docroot/sites/riptide.dd/*
 
 # Ignore paths that contain user-generated content.
 docroot/sites/*/files
